@@ -157,27 +157,25 @@ with c2:
                     diet_herb = 0
                     diet_omnv = 0
                     
-                    match diet:
-                        case 'Herbivore':
-                            diet_herb = 1
-                        case 'Carnivore':
-                            diet_car = 1
-                        case 'Omnivore':
-                            diet_omnv = 1
+                    if diet == 'Herbivore':
+                        diet_herb= 1
+                    if diet == 'Carnivore':
+                        diet_car = 1
+                    if diet == 'Carnivore':
+                        diet_omnv = 1
 
-                    match origin:
-                        case 'Asia':
-                            con_as = 1
-                        case 'Africa':
-                            con_af = 1
-                        case 'Europe':
-                            con_eu = 1
-                        case 'South America':
-                            con_sa = 1
-                        case 'North America':
-                            con_na = 1
-                        case 'Australia':
-                            con_oc = 1                   
+                    if origin == 'Asia':
+                        con_as = 1
+                    if origin == 'Africa':
+                        con_af = 1
+                    if origin == 'Europe':
+                        con_eu = 1
+                    if origin =='South America':
+                        con_sa = 1
+                    if origin == 'North America':
+                        con_na = 1
+                    if origin == 'Australia':
+                        con_oc = 1                   
 
                     d = {'continent_AF': [con_af], 'continent_AQ': [con_aq], 'continent_AS': [con_as], 'continent_EU': [con_eu],
                         'continent_NA': [con_na], 'continent_OC': [con_oc], 'continent_SA': [con_sa], 'diet_carnivorous': [diet_car],
